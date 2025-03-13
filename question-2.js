@@ -7,3 +7,6 @@ const students = [
 ];
 
 // เริ่มเขียนโค้ดตรงนี้
+console.log("Total score is " + students.filter(studen=>studen.score>50)
+                                        .map(studen=>studen.score+(studen.score*0.1))
+                                        .reduce((acc,value)=>value+acc))
